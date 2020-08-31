@@ -1,0 +1,20 @@
+doctype html
+html 
+    head 
+        title Clothes Store
+        style
+            include css/layout.css
+            include css/categories.css
+            include css/search.css
+            include css/cart.css
+           
+
+        link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css')
+
+    body
+        include includes/header
+        block content
+script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js")
+script
+    include JS/application.js

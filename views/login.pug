@@ -1,0 +1,19 @@
+extends layout.pug 
+
+block content
+    style  
+        include css/login.css 
+    .wrapper.fadeInDown
+        p=error
+        #formContent
+            // Tabs Titles
+            h2.active 
+                a(href='/user/login') Sign In 
+            h2.inactive.underlineHover 
+                a(href='/user/register') Sign Up 
+            form(action='/user/accountlogin' method='post')
+                input#login.fadeIn.second(type='text', name='email', placeholder='Email')
+                input#password.fadeIn.third(type='password', name='password', placeholder='Password')
+                input.fadeIn.fourth(type='submit', value='Log In')
+
+     

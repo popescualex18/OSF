@@ -1,0 +1,14 @@
+extends layout.pug
+block content
+    h1.section Subcategories
+    each item in items
+        .products
+            p #{item.name}
+            .subcategories
+                .img
+                    img(src=`/images/${item.image}`)
+                .description
+                    p #{item.page_description}
+            a(href=`/product/men/${item.id}?page=1`) View Products
+
+            
